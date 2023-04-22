@@ -5,186 +5,219 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Котодім | Головна</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a href="index.html"
-          ><img
-            src="images/cat.svg"
-            alt="Логотип сайту з мордочкою котика"
-            width="24"
-            height="24"
-          />Котодім</a
-        >
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="index.html" class="logo"
+            ><img
+              src="./images/cat.svg"
+              alt="Логотип сайту з мордочкою котика"
+              width="24"
+              height="24"
+            />Котодім</a
+          >
+          <nav>
+            <ul class="nav-list">
+              <li>
+                <a href="choose-cat.html" class="nav-link">Oбрати котика</a>
+              </li>
+              <li>
+                <a href="donate.html" class="nav-link">Задонатити котикам</a>
+              </li>
+              <li><a href="contacts.html" class="nav-link">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="choose-cat.html">Oбрати котика</a></li>
-          <li><a href="donate.html">Задонатити котикам</a></li>
-          <li><a href="contacts.html">Контакти</a></li>
-        </ul>
-      </nav>
     </header>
     <main>
-      <div class="container">
-        <section>
+      <section>
+        <div class="container">
           <h2>Привіт людино</h2>
           <p>
             Бракує в житті шовкових лапок, м’якенького пухнастого животика,
             теплого муррркотіння й веселого розгардіяшу? <br />
             Візьми собі котика.
           </p>
-        </section>
-      </div>
-      <div class="container">
-        <section>
-          <h2>Ці друзяки готові приймати твою любов і піклування</h2>
-          <ul>
-            <li>
-              <img
-                src="images/cat 1.jpg"
-                alt="Сірий кіт дивиться на крористувача"
-                width="300"
-                height="auto"
-              />
-              <h3>Барбарис</h3>
-              <p>Хижий для ворогів, ласкавий та м’якесенький до своїх.</p>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h2 class="section-title">
+            Ці друзяки готові приймати твою любов і піклування
+          </h2>
+          <ul class="ready-to-recieve__gallery">
+            <li class="ready-to-recieve__card">
+              <div class="ready-to-recieve__image-thumb">
+                <img
+                  src="./images/cat 1.jpg"
+                  alt="Сірий кіт дивиться на крористувача"
+                />
+              </div>
+              <div class="ready-to-recieve__content">
+                <h3 class="ready-to-recieve__title">Барбарис</h3>
+                <p class="ready-to-recieve__description">
+                  Хижий для ворогів, ласкавий та м’якесенький до своїх.
+                </p>
+              </div>
             </li>
-            <li>
-              <img
-                src="images/cat 2.jpg"
-                alt="Сірий котик спить"
-                width="300"
-                height="auto"
-              />
-              <h3>Мишка</h3>
-              <p>Киця з роду котів-талісманів. Несе удачу та затишок в дім.</p>
+            <li class="ready-to-recieve__card">
+              <div class="ready-to-recieve__image-thumb">
+                <img src="./images/cat 2.jpg" alt="Сірий котик спить" />
+              </div>
+              <div class="ready-to-recieve__content">
+                <h3 class="ready-to-recieve__title">Мишка</h3>
+                <p class="ready-to-recieve__description">
+                  Киця з роду котів-талісманів. Несе удачу та затишок в дім.
+                </p>
+              </div>
             </li>
-            <li>
-              <img
-                src="images/cat 3.jpg"
-                alt="Сірий кіт позіхає"
-                width="300"
-                height="auto"
-              />
-              <h3>Капітан</h3>
-              <p>Всюди головний. Підкорить тебе, але ти будеш щасливий.</p>
+            <li class="ready-to-recieve__card">
+              <div class="ready-to-recieve__image-thumb">
+                <img src="./images/cat 3.jpg" alt="Сірий кіт позіхає" />
+              </div>
+              <div class="ready-to-recieve__content">
+                <h3 class="ready-to-recieve__title">Капітан</h3>
+                <p class="ready-to-recieve__description">
+                  Всюди головний. Підкорить тебе, але ти будеш щасливий.
+                </p>
+              </div>
             </li>
           </ul>
-        </section>
-      </div>
-      <div class="container">
-        <section>
-          <h2>Котики, які вже знайшли сім’ю</h2>
-          <p>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h2 class="section-title">Котики, які вже знайшли сім’ю</h2>
+          <p class="already-found__description">
             Ти тільки поглянь, скільки ніжності!<br />На місці цих задоволених
             людей можеш бути ти.
           </p>
-          <ul>
-            <li>
+          <ul class="already-found__gallery">
+            <li class="already-found__item">
               <img
-                src="images/1.jpg"
+                src="./images/1.jpg"
                 alt="Білий котик на руках"
                 width="150"
                 height="auto"
               />
             </li>
-            <li>
+            <li class="already-found__item">
               <img
-                src="images/2.jpg"
+                src="./images/2.jpg"
                 alt="Чорний котик на руках"
                 width="150"
                 height="auto"
               />
             </li>
-            <li>
+            <li class="already-found__item">
               <img
-                src="images/3.jpg"
+                src="./images/3.jpg"
                 alt="Білий кошеня спить на долонях"
                 width="150"
                 height="auto"
               />
             </li>
-            <li>
+            <li class="already-found__item">
               <img
-                src="images/4.jpg"
+                src="./images/4.jpg"
                 alt="Дівчина з сірим котом за коміром"
                 width="150"
                 height="auto"
               />
             </li>
-            <li><img src="images/5.jpg" alt="" width="150" height="auto" /></li>
-            <li><img src="images/6.jpg" alt="" width="150" height="auto" /></li>
-            <li><img src="images/7.jpg" alt="" width="150" height="auto" /></li>
-            <li><img src="images/8.jpg" alt="" width="150" height="auto" /></li>
-            <li><img src="images/9.jpg" alt="" width="150" height="auto" /></li>
-            <li>
-              <img src="images/10.jpg" alt="" width="150" height="auto" />
+            <li class="already-found__item">
+              <img src="./images/5.jpg" alt="" width="150" height="auto" />
             </li>
-            <li>
-              <img src="images/11.jpg" alt="" width="150" height="auto" />
+            <li class="already-found__item">
+              <img src="./images/6.jpg" alt="" width="150" height="auto" />
             </li>
-            <li>
-              <img src="images/12.jpg" alt="" width="150" height="auto" />
+            <li class="already-found__item">
+              <img src="./images/7.jpg" alt="" width="150" height="auto" />
+            </li>
+            <li class="already-found__item">
+              <img src="./images/8.jpg" alt="" width="150" height="auto" />
+            </li>
+            <li class="already-found__item">
+              <img src="./images/9.jpg" alt="" width="150" height="auto" />
+            </li>
+            <li class="already-found__item">
+              <img src="./images/10.jpg" alt="" width="150" height="auto" />
+            </li>
+            <li class="already-found__item">
+              <img src="./images/11.jpg" alt="" width="150" height="auto" />
+            </li>
+            <li class="already-found__item">
+              <img src="./images/12.jpg" alt="" width="150" height="auto" />
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
-    <footer style="background-color: teal">
-      <div>
-        <a href="index.html">
-          <img
-            src="images/cat.svg"
-            alt="Логотип сайту з мордочкою котика"
-            width="24"
-            height="24"
-          />
-        </a>
-        <p>Котики — то щастя.<br />Забирай, люби й ставай щасливішим.</p>
-      </div>
-      <div>
-        <h2>Соцмережі</h2>
-        <ul>
-          <li>
-            <a href="https://www.instagram.com">
-              <img
-                src="images/instagram.svg"
-                alt="Інстаграм іконка"
-                width="16"
-                height="16"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com"
-              ><img
-                src="images/facebook.svg"
-                alt="Фейсбук іконка"
-                width="16"
-                height="16"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com"
-              ><img
-                src="images/youtube.svg"
-                alt="Ютуб іконка"
-                width="16"
-                height="16"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.tiktok.com"
-              ><img
-                src="images/tiktok.svg"
-                alt="Тік-ток іконка"
-                width="16"
-                height="16"
-            /></a>
-          </li>
-        </ul>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div>
+          <a href="index.html">
+            <img
+              src="./images/cat.svg"
+              alt="Логотип сайту з мордочкою котика"
+              width="24"
+              height="24"
+            />
+          </a>
+          <p class="footer__description">
+            Котики — то щастя.<br />Забирай, люби й ставай щасливішим.
+          </p>
+        </div>
+        <div>
+          <h2 class="social__title">Соцмережі</h2>
+          <ul class="social__gallery">
+            <li>
+              <a href="https://www.instagram.com" class="social__link">
+                <svg class="social__icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" class="social__link">
+                <svg class="social__icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com" class="social__link">
+                <svg class="social__icon">
+                  <use href="./images/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com" class="social__link">
+                <svg class="social__icon">
+                  <use href="./images/icons.svg#icon-tiktok"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
