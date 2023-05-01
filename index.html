@@ -14,6 +14,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.0/simple-lightbox.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/siema@1.5.1/dist/siema.min.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -48,7 +57,7 @@
                 </p>
               </div>
             </li>
-            <!-- <li class="hero-item second">
+            <li class="hero-item second">
               <div class="greeting">
                 <h1>Нарешті ти тут</h1>
                 <p>
@@ -67,7 +76,7 @@
                   Візми собі котика.
                 </p>
               </div>
-            </li> -->
+            </li>
           </ul>
           <div class="hero-buttons">
             <button type="button" class="hero-btn next">
@@ -95,21 +104,21 @@
           Ці друзяки готові приймати твою любов і піклування
         </h2>
         <ul class="cat-list">
-          <li>
+          <li data-aos="fade-up-left">
             <img src="./img/picture-2.jpg" alt="" />
             <div class="content">
               <h3>Барбарис</h3>
               <p>Хижий для ворогів, ласкавий та м’якесенький до своїх.</p>
             </div>
           </li>
-          <li>
-            <img src="./img/picture-1.jpg" alt="" />
+          <li data-aos="flip-down">
+            <img src="./img/picture-1.jpg" alt="" class="cat-photo" />
             <div class="content">
               <h3>Мишка</h3>
               <p>Киця з роду котів-талісманів. Несе удачу та затишок в дім.</p>
             </div>
           </li>
-          <li>
+          <li data-aos="zoom-in-up">
             <img src="./img/picture.jpg" alt="" />
             <div class="content">
               <h3>Капітан</h3>
@@ -120,7 +129,9 @@
       </section>
 
       <section class="section container">
-        <h2 class="section-title">Котики, які вже знайшли сім’ю</h2>
+        <h2 class="section-title" data-aos="flip-right">
+          Котики, які вже знайшли сім’ю
+        </h2>
         <p class="section-text">
           Ти тільки поглянь, скільки ніжності! <br />
           На місці цих задоволених людей можеш бути ти.
@@ -239,6 +250,10 @@
         </section>
       </div>
     </footer>
-    <script src="./dist/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.1.0/dist/simple-lightbox.min.js
+    "></script>
+    <script src="https://unpkg.com/siema@1.5.1/dist/siema.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./dist/app.js"></script>
   </body>
 </html>
